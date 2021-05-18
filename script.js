@@ -26,7 +26,7 @@ const checkAdj = (grid, y, x) => {
   let right;
   let left;
 
-  if (grid[y][x + 1] != undefined)
+  if (grid[y][x+1] != undefined)
     right = grid[y][x + 1];
   if (current < right) {
     increasingPaths++
@@ -56,7 +56,7 @@ const checkAdj = (grid, y, x) => {
 }
 
 function findPaths(grid) {
-  grid.forEach(g => console.log(g));
+  grid.forEach(row => console.log(row));
   
   for (let y = 0; y < grid.length; y++) {
     for (let x = 0; x < grid.length; x++) {
